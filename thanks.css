@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at center, #222831, #0f0f0f);
+  color: white;
+  text-align: center;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  top: 30%;
+}
+
+h1 {
+  font-size: 3em;
+  color: #ffeb3b;
+  text-shadow: 0 0 20px #f44336, 0 0 40px #f44336;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #f44336, 0 0 20px #f44336;
+  }
+  to {
+    text-shadow: 0 0 30px #ff5722, 0 0 60px #ff5722;
+  }
+}
+
+p {
+  font-size: 1.5em;
+  margin-top: 10px;
+  color: #90caf9;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #a5d6a7;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
